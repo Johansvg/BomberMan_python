@@ -145,11 +145,9 @@ n = int(input("Ingrese numero de segundos: "))
 c = int(input("Ingrese numero de columnas: "))
 r = int(input("Ingrese numero de filas: "))
 contadora = 0
-cuadricula = [['.', '.', '.', '.', '.', '.', '.'], ['.', '.', '.', 'O', '.', '.', '.'], ['.', '.', '.', '.', 'O', '.', '.'], ['.', '.', '.', '.', '.', '.', '.'], ['O', 'O', '.', '.', '.', '.', '.'], ['O', 'O', '.', '.', '.', '.', '.']]
-'''
+cuadricula = []
 crear_matricula(r, c, cuadricula)
 poner_bombas(r, c, cuadricula)
-'''
 print("ANTES DE EXPLOTAR")
 imprimir_cuadricula(r, c, cuadricula)
 iniciar_juego(r, c, cuadricula, n, 1, contadora)
